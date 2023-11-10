@@ -25,7 +25,7 @@ public class CardOrderTest {
     void cardOrderCompletedSuccessfully() {
         open("http://localhost:9999/");
         SelenideElement form = $(By.className("form"));
-        form.$("[data-test-id=city] input").setValue("Якутия");
+        form.$("[data-test-id=city] input").setValue("Абакан");
         form.$("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id=date] input").setValue(planningDate);
         form.$("[data-test-id=name] input").setValue("Николаев Игорь");
